@@ -6,7 +6,7 @@
 
 {% block body %}
   <div class="example-wrapper">
-    {% if isPaginated %}
+    {% if isPaginated is defind and isPaginated %}
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           {% if page == 1 %}
